@@ -89,8 +89,6 @@ for entry in session_transcript:
 
 # STEP 6: GEMINI-BASED INSIGHT SUMMARY (Replacing OpenAI)
 import requests
-
-API_KEY = "AIzaSyA3XBjXbyr4mqTnwlZ5hAv8HPr2ZFst1PQ"  # Replace with your actual API key
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={API_KEY}"
 
 summary_prompt = """
