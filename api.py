@@ -29,7 +29,6 @@ def handle_preflight():
         return response
 
 # Configure Gemini
-GEMINI_API_KEY = "AIzaSyA3XBjXbyr4mqTnwlZ5hAv8HPr2ZFst1PQ"
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-pro")
 
