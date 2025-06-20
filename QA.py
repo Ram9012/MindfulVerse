@@ -7,14 +7,13 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 
 # Configure Gemini
-GEMINI_API_KEY = "AIzaSyA3XBjXbyr4mqTnwlZ5hAv8HPr2ZFst1PQ"
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-pro")
 
 # Load embedding model (local)
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
 
-PDF_PATH = "DAA textbook.pdf"
+PDF_PATH = "test.pdf"
 
 
 def extract_text_from_pdf(pdf_path: str) -> str:
