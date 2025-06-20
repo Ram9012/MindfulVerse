@@ -137,8 +137,8 @@ def upload_pdf():
             }), 200
             
         except Exception as e:
-            print(f"Error processing PDF: {str(e)}")
-            return jsonify({'error': str(e)}), 500
+            print(f"Error processing PDF: {str(e)}")  # Log the detailed error internally
+            return jsonify({'error': 'An internal error occurred while processing the PDF. Please try again later.'}), 500
     
     print("Invalid file type")
     return jsonify({'error': 'Invalid file type. Please upload a PDF.'}), 400
@@ -170,7 +170,8 @@ def ask_question():
         return jsonify({'answer': answer}), 200
         
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        print(f"Error occurred: {str(e)}")  # Log the detailed error internally
+        return jsonify({'error': 'An internal error has occurred. Please try again later.'}), 500
 
 if __name__ == '__main__':
     debug_mode = os.environ.get('FLASK_ENV') == 'development'
