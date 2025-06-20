@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, make_response
 from flask_cors import CORS
 import os
+from werkzeug.utils import secure_filename
 import fitz  # PyMuPDF
 import faiss
 import google.generativeai as genai
@@ -101,7 +102,11 @@ def upload_pdf():
     
     if file and file.filename.endswith('.pdf'):
         # Save the file
-        filepath = os.path.join(UPLOAD_FOLDER, file.filename)
+        sanitized_filename = secure_filename(file.filename)
+        filepath = os.path.normpath(os.path.join(UPLOAD_FOLDER, sanitized_filename))
+        if not filepath.startswith(os.path.abspath(UPLOAD_FOLDER)):
+            print("File path is outside the allowed directory")
+            return jsonify({'error': 'Invalid file path'}), 400
         file.save(filepath)
         print(f"File saved to {filepath}")
         
