@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <!-- Glow Effect -->
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="4" result="blur" />
+    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+  </filter>
+  
+  <!-- Head with Glow -->
+  <circle cx="100" cy="70" r="42" fill="#9F7AEA" opacity="0.3" filter="url(#glow)" />
+  <circle cx="100" cy="70" r="40" fill="#B794F6" />
+  
+  <!-- Face -->
+  <circle cx="85" cy="60" r="5" fill="#4A3A77" /> <!-- Left eye -->
+  <circle cx="115" cy="60" r="5" fill="#4A3A77" /> <!-- Right eye -->
+  <path d="M90 80 Q100 90 110 80" stroke="#4A3A77" stroke-width="3" fill="none" /> <!-- Smile -->
+  
+  <!-- Glasses -->
+  <circle cx="85" cy="60" r="10" stroke="#6B46C1" stroke-width="2" fill="none" />
+  <circle cx="115" cy="60" r="10" stroke="#6B46C1" stroke-width="2" fill="none" />
+  <line x1="95" y1="60" x2="105" y2="60" stroke="#6B46C1" stroke-width="2" />
+  
+  <!-- Body -->
+  <rect x="80" y="110" width="40" height="60" fill="#805AD5" rx="5" /> <!-- Shirt -->
+  
+  <!-- Arms -->
+  <rect x="60" y="110" width="20" height="50" fill="#B794F6" rx="10" /> <!-- Left arm -->
+  <rect x="120" y="110" width="20" height="50" fill="#B794F6" rx="10" /> <!-- Right arm -->
+  
+  <!-- Legs -->
+  <rect x="80" y="170" width="15" height="30" fill="#6B46C1" rx="5" /> <!-- Left leg -->
+  <rect x="105" y="170" width="15" height="30" fill="#6B46C1" rx="5" /> <!-- Right leg -->
+  
+  <!-- Shoes -->
+  <rect x="75" y="195" width="25" height="5" fill="#4A3A77" rx="2" /> <!-- Left shoe -->
+  <rect x="100" y="195" width="25" height="5" fill="#4A3A77" rx="2" /> <!-- Right shoe -->
+  
+  <!-- Decorative Elements -->
+  <circle cx="70" cy="140" r="5" fill="#E9D8FD" opacity="0.6" />
+  <circle cx="130" cy="140" r="5" fill="#E9D8FD" opacity="0.6" />
+  
+  <!-- Small Star on Shirt -->
+  <path d="M100,130 L102,135 L107,135 L103,138 L105,143 L100,140 L95,143 L97,138 L93,135 L98,135 Z" fill="#E9D8FD" />
+</svg>

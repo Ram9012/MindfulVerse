@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300" fill="none">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="roadmapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A3A77" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7B5E9E" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Rectangle -->
+  <rect width="800" height="300" fill="url(#roadmapGradient)" rx="20" ry="20" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="50" r="20" fill="#E3C2FF" opacity="0.2" />
+  <circle cx="700" cy="250" r="30" fill="#E3C2FF" opacity="0.2" />
+  <circle cx="400" cy="100" r="15" fill="#E3C2FF" opacity="0.2" />
+  
+  <!-- Main Path with Glow Effect -->
+  <path d="M50,250 C100,250 150,150 200,150 C250,150 300,250 350,250 C400,250 450,150 500,150 C550,150 600,250 650,250 C700,250 750,150 800,150" 
+        stroke="#9D7FBD" stroke-width="20" fill="none" stroke-linecap="round" opacity="0.3" />
+  
+  <!-- Main Path -->
+  <path d="M50,250 C100,250 150,150 200,150 C250,150 300,250 350,250 C400,250 450,150 500,150 C550,150 600,250 650,250 C700,250 750,150 800,150" 
+        stroke="#B794F6" stroke-width="12" fill="none" stroke-linecap="round" />
+  
+  <!-- Level Markers -->
+  <!-- Level 1 (Completed) -->
+  <circle cx="100" cy="250" r="25" fill="#9F7AEA" />
+  <circle cx="100" cy="250" r="20" fill="#B794F6" />
+  <text x="100" y="255" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">1</text>
+  <circle cx="100" cy="250" r="30" stroke="#E9D8FD" stroke-width="2" fill="none" opacity="0.6" />
+  
+  <!-- Level 2 (Completed) -->
+  <circle cx="250" cy="150" r="25" fill="#9F7AEA" />
+  <circle cx="250" cy="150" r="20" fill="#B794F6" />
+  <text x="250" y="155" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">2</text>
+  <circle cx="250" cy="150" r="30" stroke="#E9D8FD" stroke-width="2" fill="none" opacity="0.6" />
+  
+  <!-- Level 3 (Current) -->
+  <circle cx="400" cy="250" r="35" fill="#805AD5" />
+  <circle cx="400" cy="250" r="28" fill="#6B46C1" />
+  <text x="400" y="255" font-family="Arial" font-size="18" fill="white" text-anchor="middle" font-weight="bold">3</text>
+  <circle cx="400" cy="250" r="40" stroke="#E9D8FD" stroke-width="3" fill="none">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Level 4 (Locked) -->
+  <circle cx="550" cy="150" r="25" fill="#6B46C1" opacity="0.5" />
+  <circle cx="550" cy="150" r="20" fill="#805AD5" opacity="0.5" />
+  <text x="550" y="155" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold" opacity="0.7">4</text>
+  <circle cx="550" cy="150" r="30" stroke="#E9D8FD" stroke-width="2" fill="none" opacity="0.3" />
+  
+  <!-- Level 5 (Locked) -->
+  <circle cx="700" cy="250" r="25" fill="#6B46C1" opacity="0.5" />
+  <circle cx="700" cy="250" r="20" fill="#805AD5" opacity="0.5" />
+  <text x="700" y="255" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold" opacity="0.7">5</text>
+  <circle cx="700" cy="250" r="30" stroke="#E9D8FD" stroke-width="2" fill="none" opacity="0.3" />
+  
+  <!-- Small Decorative Stars -->
+  <path d="M150,100 L153,107 L160,108 L155,113 L156,120 L150,117 L144,120 L145,113 L140,108 L147,107 Z" fill="#E9D8FD" opacity="0.6" />
+  <path d="M600,80 L603,87 L610,88 L605,93 L606,100 L600,97 L594,100 L595,93 L590,88 L597,87 Z" fill="#E9D8FD" opacity="0.6" />
+  <path d="M350,180 L353,187 L360,188 L355,193 L356,200 L350,197 L344,200 L345,193 L340,188 L347,187 Z" fill="#E9D8FD" opacity="0.6" />
+</svg>
