@@ -10,10 +10,8 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 from dotenv import load_dotenv
 from gemini_service import setup_gemini, generate_response, transcribe_audio_with_gemini
 import json
-
-# Import the classification model functions directly
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from classification_model import detect_emotions, detect_themes, detect_distortions, generate_summary
+
 
 # Load environment variables from .env file
 load_dotenv()
